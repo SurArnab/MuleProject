@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: Hello-Sample-API
+description: This is sample API
+version: v1
+protocols:
+  - HTTP
+  - HTTPS
+mediaType: 
+  - application/json
+  - application/xml
+
+/hello:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "message" : "Hello World"
+              }
+        
